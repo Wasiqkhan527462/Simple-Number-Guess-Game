@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container" role="main" aria-label="Number Guessing Game">
+        <h1>Number Guessing Game</h1>
+        <p>Guess the number between 1 and 100!</p>
+        <form id="guess-form" autocomplete="off" aria-label="Guess Form">
+            <label for="guess-input">Enter your guess:</label>
+            <div class="input-group">
+                <input type="number" id="guess-input" min="1" max="100" placeholder="Your guess" aria-required="true" aria-label="Guess input">
+                <button id="guess-btn" type="submit" aria-label="Submit guess">Guess</button>
+            </div>
+        </form>
+        <div id="feedback" aria-live="polite"></div>
+        <div id="attempts">Attempts: 0</div>
+        <button id="restart-btn" aria-label="Restart game">Restart</button>
+        <footer style="margin-top:32px; text-align:center; color:#fff; font-size:1em; opacity:0.8; letter-spacing:1px;">
+            Developed by Wasiq Khan
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
